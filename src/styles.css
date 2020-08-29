@@ -1,4 +1,12 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+* {
+  font-family: Lato;
+  color: white;
+}
+
+body {
+  background: black;
+}
+
+input {
+  color: black;
 }
