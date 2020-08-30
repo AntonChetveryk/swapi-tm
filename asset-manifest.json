@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/swapi-tm/static/css/main.a298ff5c.chunk.css",
-    "main.js": "/swapi-tm/static/js/main.7eee8990.chunk.js",
-    "main.js.map": "/swapi-tm/static/js/main.7eee8990.chunk.js.map",
+    "main.js": "/swapi-tm/static/js/main.88caf113.chunk.js",
+    "main.js.map": "/swapi-tm/static/js/main.88caf113.chunk.js.map",
     "runtime-main.js": "/swapi-tm/static/js/runtime-main.262fc4e3.js",
     "runtime-main.js.map": "/swapi-tm/static/js/runtime-main.262fc4e3.js.map",
     "static/css/2.afc36f9d.chunk.css": "/swapi-tm/static/css/2.afc36f9d.chunk.css",
-    "static/js/2.b910d354.chunk.js": "/swapi-tm/static/js/2.b910d354.chunk.js",
-    "static/js/2.b910d354.chunk.js.map": "/swapi-tm/static/js/2.b910d354.chunk.js.map",
+    "static/js/2.1fcbf233.chunk.js": "/swapi-tm/static/js/2.1fcbf233.chunk.js",
+    "static/js/2.1fcbf233.chunk.js.map": "/swapi-tm/static/js/2.1fcbf233.chunk.js.map",
     "index.html": "/swapi-tm/index.html",
-    "precache-manifest.cf05cc274190aa668ec2d0b0ae55e3c7.js": "/swapi-tm/precache-manifest.cf05cc274190aa668ec2d0b0ae55e3c7.js",
+    "precache-manifest.f20a271d7cbb7e8fb1fb5a83c31ebb30.js": "/swapi-tm/precache-manifest.f20a271d7cbb7e8fb1fb5a83c31ebb30.js",
     "service-worker.js": "/swapi-tm/service-worker.js",
     "static/css/2.afc36f9d.chunk.css.map": "/swapi-tm/static/css/2.afc36f9d.chunk.css.map",
     "static/css/main.a298ff5c.chunk.css.map": "/swapi-tm/static/css/main.a298ff5c.chunk.css.map",
-    "static/js/2.b910d354.chunk.js.LICENSE.txt": "/swapi-tm/static/js/2.b910d354.chunk.js.LICENSE.txt"
+    "static/js/2.1fcbf233.chunk.js.LICENSE.txt": "/swapi-tm/static/js/2.1fcbf233.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.262fc4e3.js",
     "static/css/2.afc36f9d.chunk.css",
-    "static/js/2.b910d354.chunk.js",
+    "static/js/2.1fcbf233.chunk.js",
     "static/css/main.a298ff5c.chunk.css",
-    "static/js/main.7eee8990.chunk.js"
+    "static/js/main.88caf113.chunk.js"
   ]
 }
