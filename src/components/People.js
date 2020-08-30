@@ -33,7 +33,14 @@ export function People() {
   // return <div>{people.map(toPerson)}</div>;
   return (
     <div className="container">
-      <input type="text" value={value} onChange={onChange} />
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+        placeholder="Choose a hero"
+        className="my-4"
+        style={{ fontSize: "1.5rem" }}
+      />
       {renderList()}
     </div>
   );

@@ -3,18 +3,24 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  padding: 10px;
-  cursor: pointer;
-  &:hover {
-    background-color: skyblue;
+  margin-bottom: 20px;
+  a {
     color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  a:hover {
+    color: gold;
   }
 `;
 
 export function PersonListItem({ name, id }) {
   return (
-    <Link to={`/people/${id}`} key={id}>
-      <Wrapper>{name}</Wrapper>
-    </Link>
+    <Wrapper>
+      <Link to={`/people/${id}`} key={id}>
+        {name}
+      </Link>
+    </Wrapper>
   );
 }

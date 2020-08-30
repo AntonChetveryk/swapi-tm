@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  font-size: 1.2rem;
+  a {
+    text-decoration: none;
+  }
+
+  i {
+    color: darkgrey;
+  }
+`;
 
 export function Film() {
   const [film, setFilm] = useState();
@@ -14,16 +26,26 @@ export function Film() {
   }, [setFilm, filmId]);
 
   if (!film) {
-    return <div>Loading...</div>;
+    return <div className="container">Loading...</div>;
   }
 
   return (
     <div className="container">
-      <Link to="/">Back</Link>
-      <div>producer: {film.producer}</div>
-      <div>title: {film.title}</div>
-      <div>episode: {film.episode_id}</div>
-      <div>release date: {film.release_date}</div>
+      <Wrapper>
+        <Link to="/">Back</Link>
+        <div>
+          <i>producer:</i> {film.producer}
+        </div>
+        <div>
+          <i>title:</i> {film.title}
+        </div>
+        <div>
+          <i>episode:</i> {film.episode_id}
+        </div>
+        <div>
+          <i>release date:</i> {film.release_date}
+        </div>
+      </Wrapper>
     </div>
   );
 }
