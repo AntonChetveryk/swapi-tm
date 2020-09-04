@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,EACE,gBAEF,CAEA,QAHE,UAKF","file":"main.fd930568.chunk.css","sourcesContent":["* {\r\n  font-family: Lato;\r\n  color: black;\r\n}\r\n\r\ninput {\r\n  color: black;\r\n}\r\n"]}
