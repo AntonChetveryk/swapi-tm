@@ -31,14 +31,14 @@ const Button = styled.button`
 `;
 
 const themeDark = {
-  bg: "black",
+  // bg: "black",
   color: "white",
   btnBg: "white",
   btnTextColor: "black",
 };
 
 const themeLight = {
-  bg: "white",
+  // bg: "white",
   color: "black",
   btnBg: "black",
   btnTextColor: "white",
