@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { PersonListItem } from "./PersonListItem";
 import axios from "axios";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  span {
+    color: ${(props) => props.theme.color};
+  }
+`;
 
 export function People() {
   const [people, setPeople] = useState([]);
@@ -23,7 +30,13 @@ export function People() {
       .map((person, index) => (
         <PersonListItem name={person.name} id={index + 1} key={index} />
       ));
-    return arr.length ? arr : <h2 className="text-center">List is empty</h2>;
+    return arr.length ? (
+      arr
+    ) : (
+      <h2 className="text-center">
+        <span>List is empty</span>
+      </h2>
+    );
   };
 
   // const toPerson = useCallback((person, index) => (
@@ -32,16 +45,18 @@ export function People() {
 
   // return <div>{people.map(toPerson)}</div>;
   return (
-    <div className="container">
-      <input
-        type="text"
-        value={value}
-        onChange={onChange}
-        placeholder="Choose a hero"
-        className="my-4"
-        style={{ fontSize: "1.5rem" }}
-      />
-      {renderList()}
-    </div>
+    <Wrapper>
+      <div className="container">
+        <input
+          type="text"
+          value={value}
+          onChange={onChange}
+          placeholder="Choose a hero"
+          className="my-4"
+          style={{ fontSize: "1.5rem" }}
+        />
+        {renderList()}
+      </div>
+    </Wrapper>
   );
 }

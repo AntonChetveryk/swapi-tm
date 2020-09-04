@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   margin-bottom: 20px;
   a {
-    color: white;
+    color: ${(props) => props.theme.color};
     text-decoration: none;
     font-size: 1.5rem;
   }

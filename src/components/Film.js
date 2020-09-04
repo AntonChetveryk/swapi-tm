@@ -8,9 +8,11 @@ const Wrapper = styled.div`
   a {
     text-decoration: none;
   }
-
   i {
     color: darkgrey;
+  }
+  span {
+    color: ${(props) => props.theme.color};
   }
 `;
 
@@ -34,16 +36,24 @@ export function Film() {
       <Wrapper>
         <Link to="/">Back</Link>
         <div>
-          <i>producer:</i> {film.producer}
+          <span>
+            <i>producer:</i> {film.producer}
+          </span>
         </div>
         <div>
-          <i>title:</i> {film.title}
+          <span>
+            <i>title:</i> {film.title}
+          </span>
         </div>
         <div>
-          <i>episode:</i> {film.episode_id}
+          <span>
+            <i>episode:</i> {film.episode_id}
+          </span>
         </div>
         <div>
-          <i>release date:</i> {film.release_date}
+          <span>
+            <i>release date:</i> {film.release_date}
+          </span>
         </div>
       </Wrapper>
     </div>

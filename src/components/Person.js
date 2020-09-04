@@ -5,8 +5,11 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   font-size: 1.2rem;
+  span {
+    color: ${(props) => props.theme.color};
+  }
   a {
-    color: white;
+    color: ${(props) => props.theme.color};
     text-decoration: none;
   }
   a:hover {
@@ -42,16 +45,24 @@ export function Person(props) {
           Back
         </Link>
         <div>
-          <i>name:</i> {person.name}
+          <span>
+            <i>name:</i> {person.name}
+          </span>
         </div>
         <div>
-          <i>gender:</i> {person.gender}
+          <span>
+            <i>gender:</i> {person.gender}
+          </span>
         </div>
         <div>
-          <i>height:</i> {person.height}
+          <span>
+            <i>height:</i> {person.height}
+          </span>
         </div>
         <div>
-          <i>hair:</i> {person.hair_color}
+          <span>
+            <i>hair:</i> {person.hair_color}
+          </span>
         </div>
         <div>
           <p>
