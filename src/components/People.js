@@ -20,7 +20,7 @@ export function People() {
       setPeople(res.data.results);
       setIsLoading(false);
     });
-  }, [setPeople]);
+  }, [setPeople, setIsLoading]);
 
   const onChange = ({ target: { value } }) => {
     setValue(value);
