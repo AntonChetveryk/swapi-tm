@@ -30,7 +30,7 @@ const NavigationLink = styled(Link)`
 export function Person(props) {
   const [person, setPerson] = useState();
   let { personId } = useParams();
-
+  console.log(props);
   useEffect(() => {
     axios.get(`https://swapi.dev/api/people/${personId}/`).then((res) => {
       setPerson(res.data);
