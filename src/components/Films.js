@@ -7,13 +7,13 @@ const Wrapper = styled.div`
   div {
     margin-bottom: 20px;
   }
-  a {
-    color: ${(props) => props.theme.color};
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
+`;
 
-  a:hover {
+const NavigationLink = styled(Link)`
+  color: ${(props) => props.theme.color};
+  text-decoration: none;
+  font-size: 1.5rem;
+  &:hover {
     color: gold;
   }
 `;
@@ -23,7 +23,6 @@ export function Films() {
 
   useEffect(() => {
     axios.get(`https://swapi.dev/api/films/`).then((res) => {
-      console.log(res);
       setFilms(res.data.results);
     });
   }, [setFilms]);
@@ -37,7 +36,9 @@ export function Films() {
       <Wrapper>
         {films.map((film) => (
           <div key={film.episode_id}>
-            <Link to={`/films/${film.episode_id}`}>{film.title}</Link>
+            <NavigationLink to={`/films/${film.episode_id}`}>
+              {film.title}
+            </NavigationLink>
           </div>
         ))}
       </Wrapper>

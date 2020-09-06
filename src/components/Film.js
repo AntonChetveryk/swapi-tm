@@ -22,7 +22,6 @@ export function Film() {
 
   useEffect(() => {
     axios.get(`https://swapi.dev/api/films/${filmId}/`).then((res) => {
-      console.log(res);
       setFilm(res.data);
     });
   }, [setFilm, filmId]);

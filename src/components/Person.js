@@ -8,18 +8,22 @@ const Wrapper = styled.div`
   span {
     color: ${(props) => props.theme.color};
   }
-  a {
-    color: ${(props) => props.theme.color};
-    text-decoration: none;
-  }
-  a:hover {
-    color: gold;
-  }
   a.back {
     color: blue;
   }
   i {
     color: darkgrey;
+  }
+  li {
+    list-style-type: none;
+  }
+`;
+
+const NavigationLink = styled(Link)`
+  color: ${(props) => props.theme.color};
+  font-size: 1.5rem;
+  &:hover {
+    color: gold;
   }
 `;
 
@@ -29,7 +33,6 @@ export function Person(props) {
 
   useEffect(() => {
     axios.get(`https://swapi.dev/api/people/${personId}/`).then((res) => {
-      console.log(res);
       setPerson(res.data);
     });
   }, [setPerson, personId]);
@@ -73,7 +76,9 @@ export function Person(props) {
               const numberOfFilm = film[film.length - 2];
               return (
                 <li key={film}>
-                  <Link to={`/films/${numberOfFilm}`}>{film}</Link>
+                  <NavigationLink to={`/films/${numberOfFilm}`}>
+                    {film}
+                  </NavigationLink>
                 </li>
               );
             })}
